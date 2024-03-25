@@ -1,13 +1,12 @@
-import { router } from './router-config.js';
+import { PlayersController } from "./controllers/PlayersController.js";
 
 class App {
 
-  router = router
+  playersController = new PlayersController();
 
   init() {
-    this.router.init(app)
-  }
 
+  }
 }
 
 const app = new App()
